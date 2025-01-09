@@ -7,11 +7,10 @@ phases:
       - python3 -m venv .venv
       - source .venv/bin/activate
       - pip install --upgrade pip
-      - pip install pytest flask
   pre_build:
     commands:
       - echo Running pre-build steps...
-      - source .venv/bin/activate && pytest --version
+      - source .venv/bin/activate
   build:
     commands:
       - echo Running build steps...
